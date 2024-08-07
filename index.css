@@ -1,0 +1,404 @@
+/* ################# html styling ############################ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ################################## utility class ########################## */
+
+.color-white {
+  color: aliceblue;
+}
+
+.color-red {
+  color: rgb(235, 43, 43);
+}
+
+.color-gray {
+  color: rgb(212, 196, 196);
+}
+
+.backcolor-gray {
+  background-color: rgb(156, 163, 168);
+}
+
+.backcolor-white {
+  background-color: antiquewhite;
+}
+
+.backcolor-black {
+  background-color: #263238;
+}
+
+.backcolor-red {
+  background-color: rgb(226, 40, 40);
+}
+
+.color-black {
+  color: rgb(22, 21, 21);
+}
+
+.low-wght {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.mid-wght {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+div.container {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  position: relative;
+}
+
+.btn {
+  margin: 16px;
+  padding: 6px;
+  display: inline-block;
+  border: 2px solid red;
+  border-radius: 10rem;
+  background-color: aliceblue;
+}
+
+.sec-btn:hover {
+  background-color: rgba(255, 128, 128, 0.363);
+}
+
+.pri-btn:hover {
+  background-color: rgba(143, 139, 139, 0.356);
+}
+
+/* ###################### header backgground ###################### */
+header {
+  width: 100vw;
+  height: 95vh;
+  /* background: url("c:/Users/Arpita/Desktop/WEB DEV/HTML/PROJECTS/TravelProject/pics/index_pic1"); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("c:/Users/Arpita/Desktop/WEB DEV/HTML/PROJECTS/TravelProject/pics/index_pic1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ################################ navbar style ############################## */
+
+nav.navbar {
+  width: 100%;
+  height: 100px;
+}
+
+nav img {
+  display: inline-block;
+  height: 95px;
+  width: 50px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  float: left;
+}
+
+ul.nav-items {
+  display: inline-block;
+  float: right;
+}
+
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+li.nav-item {
+  display: inline-block;
+  padding: 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+header .navbar a:hover {
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+
+/* ########################### heading content ############################ */
+
+.heading-content {
+  padding: 3rem;
+  margin: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.heading-content h2 {
+  text-align: center;
+}
+/* ################################## section style #####################3 */
+
+.showcase {
+  width: 100vw;
+  background-color: rgba(153, 143, 143, 0.568);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 3rem;
+}
+
+.row {
+  width: 100%;
+  height: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.row1 {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.row1 .img-box,
+.row2 .text-box {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.row1 .text-box,
+.row2 .img-box {
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+p {
+  padding: 0.5rem;
+}
+
+/* #/############################## feature style ##################################### */
+
+section .feature {
+  background-color: antiquewhite;
+  padding: 10rem 0;
+}
+
+.main-box {
+  height: 150px;
+  width: 100%;
+  display: inline-block;
+  margin: 5px 25px 5px 25px;
+  text-align: center;
+}
+
+.box {
+  padding: 2rem;
+}
+
+.adventure {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  background: rgb(253, 29, 29);
+  background: linear-gradient(
+    145deg,
+    rgba(253, 29, 29, 1) 18%,
+    rgba(131, 58, 180, 1) 92%
+  );
+}
+
+.less-price {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+}
+.experience {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  background: rgb(253, 29, 29);
+  background: linear-gradient(
+    145deg,
+    rgba(253, 29, 29, 1) 18%,
+    rgba(131, 58, 180, 1) 92%
+  );
+}
+
+.main-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ################################################### footer styleing ########################################### */
+
+.foot {
+  margin-top: 3rem;
+  height: 85px;
+  width: 100vw;
+  font-size: 12px;
+  background-color: #263238;
+  color: antiquewhite;
+  text-align: center;
+}
+
+.foot i {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+/* ############################################ responsive ##########################################3 */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .navbar ul{
+    display: inline;
+  }
+  .navbar img,
+  .navbar.nav-items {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .row {
+    height: auto;
+    width: 100%;
+  }
+
+  .row .img-box,
+  .row .text-box {
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+  .navbar img {
+    display: none;
+  }
+
+  .adventure,
+  .less-price,
+  .experience {
+    text-align: center;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar ul{
+    display: inline;
+  }
+  
+  .navbar img,
+  .navbar.nav-items {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar img {
+    display: none;
+  }
+  .row {
+    height: auto;
+    width: 100%;
+  }
+
+  .row .img-box,
+  .row .text-box {
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+
+  .adventure,
+  .less-price,
+  .experience {
+    text-align: center;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+  .navbar ul{
+    display: inline;
+  }
+  .navbar img,
+  .navbar.nav-items {
+    float: none;
+    display: inline;
+    width: 100%;
+    text-align: center;
+  }
+  .row {
+    height: auto;
+    width: 100%;
+  }
+  .navbar img {
+    display: none;
+  }
+
+  .row .img-box,
+  .row .text-box {
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+
+  .adventure,
+  .less-price,
+  .experience {
+    text-align: center;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  li.nav-item{
+    display: inline;
+    padding: 1rem;
+  }
+}

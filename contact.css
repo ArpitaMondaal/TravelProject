@@ -1,0 +1,384 @@
+/* ################# html styling ############################ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(211, 211, 204);
+}
+
+/* ################################## utility class ########################## */
+
+.color-white {
+  color: aliceblue;
+}
+
+.color-red {
+  color: rgb(235, 43, 43);
+}
+
+.color-gray {
+  color: rgb(172, 165, 165);
+}
+
+.backcolor-gray {
+  background-color: rgb(156, 163, 168);
+}
+
+.backcolor-white {
+  background-color: antiquewhite;
+}
+
+.backcolor-black {
+  background-color: #263238;
+}
+
+.backcolor-red {
+  background-color: rgb(226, 40, 40);
+}
+
+.color-black {
+  color: rgb(22, 21, 21);
+}
+
+.low-wght {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.mid-wght {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+div.container {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  position: relative;
+}
+
+/* ######################################## NAV BAR STYLING ############################################ */
+
+nav.navbar {
+  height: 100px;
+  width: 100vw;
+  background-color: #263238;
+  color: antiquewhite;
+}
+
+nav img {
+  display: inline-block;
+  height: 95px;
+  width: 50px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  float: left;
+}
+
+ul.nav-items {
+  display: inline-block;
+  float: right;
+}
+
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+li.nav-item {
+  display: inline-block;
+  padding: 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+
+/* ######################################### loaction ####################################### */
+
+div.loc {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+div.loc p.head {
+  display: inline;
+  word-spacing: 2rem;
+  letter-spacing: 0.5rem;
+  font-size: 1.5rem;
+}
+
+div.loc p.txt {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  word-spacing: 0.5rem;
+  font-size: 1.2rem;
+}
+
+div.left img {
+  width: 95%;
+  height: 65%;
+}
+div.loc div.left {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  width: 45%;
+  height: 100vh;
+  float: left;
+}
+
+div.loc div.right {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  width: 45%;
+  height: 100vh;
+  float: right;
+}
+
+div.right p.head::after {
+  content: "";
+  display: block;
+  border: 3px solid red;
+}
+div.loc::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ######################################################form#########################################################3 */
+
+form.form label.labelhead,
+form.form input.text {
+  display: block;
+  padding: 1rem;
+}
+form.form input.text,
+form.form textarea {
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  width: 100%;
+}
+
+form.form label.labelhead::after {
+  content: "\204E";
+  color: red;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+form.form input.btn {
+  display: inline;
+  text-align: center;
+  margin: 1rem 40% 1rem 40%;
+  padding: 1rem;
+  font-size: 2rem;
+  background: rgb(253, 29, 29);
+  background: linear-gradient(
+    145deg,
+    rgba(253, 29, 29, 1) 18%,
+    rgba(131, 58, 180, 1) 92%
+  );
+  color: #f4f4f4;
+}
+
+/* ###################################################33 submitted ################################################# */
+
+div.submitted {
+  background-color: white;
+  margin: 5rem;
+  padding: 10rem;
+}
+
+div.submitted p {
+  margin-bottom: 5rem;
+  font-size: 5rem;
+
+  font-weight: 600;
+  text-align: center;
+}
+
+div.submitted div.btn a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+div.submitted div.btn {
+  display: inline;
+  font-size: 2rem;
+  background: rgb(253, 29, 29);
+  background: linear-gradient(
+    145deg,
+    rgba(253, 29, 29, 1) 18%,
+    rgba(131, 58, 180, 1) 92%
+  );
+  border: 3px solid white;
+  margin: 2rem 40% 5rem 40%;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 20%;
+}
+
+div.submitted img {
+  margin-bottom: 10rem;
+  width: 20%;
+  margin: 2rem 33% 5rem 33%;
+}
+
+/* ############################################ responsive ##########################################3 */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  nav.navbar {
+    height: auto;
+    text-align: center;
+  }
+
+  .navbar img,
+  .navbar.nav-items {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  div.loc div.left,
+  div.loc div.right {
+    float: none;
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  form.form {
+    height: auto;
+  }
+  div.submitted div.btn {
+    margin: 2rem 0% 5rem 0%;
+  }
+  nav img {
+    display: none;
+  }
+  div.submitted p {
+    font-size: 2.5rem;
+  }
+  div.submitted div.btn {
+    margin: 2rem 5% 5rem 5%;
+  }
+  div.submitted img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  nav.navbar {
+    height: auto;
+    text-align: center;
+  }
+
+  /* img {
+    display: none;
+  } */
+
+  nav img {
+    display: none;
+  }
+  .navbar img,
+  .navbar.nav-items {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  div.loc div.left,
+  div.loc div.right {
+    float: none;
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  form.form {
+    height: auto;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+  .navbar img,
+  .navbar.nav-items {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .row {
+    height: auto;
+    width: 100%;
+  }
+  .navbar img {
+    /* div.left img { */
+    display: none;
+  }
+
+  .row .img-box,
+  .row .text-box {
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+
+  .adventure,
+  .less-price,
+  .experience {
+    text-align: center;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  div.right {
+    height: auto;
+  }
+  div.loc div.left,
+  div.loc div.right {
+    float: none;
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
